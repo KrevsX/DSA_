@@ -8,15 +8,21 @@
 #  metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
-import math
-from math import sqrt,sin
+import numpy as np
 
-
-print("Example 1")
-A=16
-print(math.sqrt(A))
-print("Example 2 BD")
-A=16
-B=3.14
-print(sqrt(A))
-print(sin(B))
+A=np.array([[1,2,1],[2,2,3]])
+B=np.array([3,4,5])
+print(A)
+print(B)
+print("----")
+print(np.add(A,B))
+print("----")
+print(np.subtract(B,A))
+print("----")
+print(np.multiply(A,B))
+print("----")
+print(np.divide(A,B))
+print("----")
+print(np.power(A,2))
+print("----")
+print(np.power(A,B))

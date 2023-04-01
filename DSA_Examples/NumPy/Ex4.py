@@ -8,15 +8,5 @@
 #  metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
-import math
-from math import sqrt,sin
+import numpy as np
 
-
-print("Example 1")
-A=16
-print(math.sqrt(A))
-print("Example 2 BD")
-A=16
-B=3.14
-print(sqrt(A))
-print(sin(B))
