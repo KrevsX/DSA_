@@ -10,14 +10,17 @@
 
 import numpy as np
 
-x = np.array([i for i in range(10)])
-print(x)
-
-print(np.where(x % 2 == 0, 'even', 'odd'))
-
-print("-----")
-
-condilist = [x < 5, x > 5]
-choiselist = [x ** 2, x ** 3]
-
-print(np.select(condilist,choiselist, default=x))
+arr= np.array([[4,3,2],[10,1,0],[5,8,24]])
+print(arr)
+print("----")
+print(np.amin(arr))
+print("----")
+print(np.amin(arr, axis=0))
+print("----")
+print(np.amin(arr, axis=1))
+print("----")
+print(np.amax(arr))
+print("----")
+print(np.amax(arr, axis=0))
+print("----")
+print(np.amax(arr, axis=1))
